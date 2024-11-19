@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GnanaSagara - Knowledge Platform</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>GnanaSagara</h1>
+    <div id="theme-switcher">
+      <button onclick="switchTheme('light')">Light Theme</button>
+      <button onclick="switchTheme('dark')">Dark Theme</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="content">
+      <h2>Welcome to GnanaSagara</h2>
+      <p>Your customizable knowledge platform!</p>
+    </section>
+
+    <section id="article-loader">
+      <input type="text" id="article-title" placeholder="Enter Wikipedia article title" />
+      <button onclick="fetchArticle()">Load Article</button>
+      <button onclick="readArticle()">Read Article</button>
+      <div id="article-box">
+        <!-- Article content will be displayed here -->
+      </div>
+    </section>
+
+    <section id="controls">
+      <button onclick="increaseFontSize()">A+</button>
+      <button onclick="decreaseFontSize()">A-</button>
+    </section>
+  </main>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
